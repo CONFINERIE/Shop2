@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">My Online Store</div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$10.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="payment" class="payment">
+            <h2>Payment</h2>
+            <form id="payment-form">
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" id="phone-number" name="phone-number" required>
+                <button id="submit">Pay with MTN Mobile Money</button>
+                <div id="error-message"><!-- Error messages will be displayed here --></div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
